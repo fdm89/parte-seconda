@@ -1,0 +1,16 @@
+<div *ngIf="selecteduser" class="container-detail">
+  <p>id:{{selecteduser.id}}</p>
+  <p>name:{{selecteduser.name}}</p>
+  <p>surname:{{selecteduser.surname}}</p>
+  <p>age:{{selecteduser.age}}</p>
+  <p>date of birth:{{selecteduser.dateOfBirth |date: "dd MMM YYYY"}}</p>
+  <p><b>Address:</b></p>
+  <p>city:{{selecteduser.address.city}}</p>
+  <p>street:{{selecteduser.address.street}}</p>
+  <p>postalcode:{{selecteduser.address.postalCode}}</p>
+  <p>role:{{selecteduser.role}}</p>
+  <p>username:{{selecteduser.username}}</p>
+  <img width="100px" height="100px" [src]="selecteduser.profilePhotoUrl">
+  <p>gender:{{selecteduser.gender}}</p>
+  <button (click)="closeDetail.emit()" class="btn btn-danger">Close</button>
+</div>
