@@ -9,6 +9,7 @@ import { User,gender,role } from '../models/User';
 export class UserSingleComponent implements OnInit {
 @Input() user!:User
 @Output() showdetail = new EventEmitter<User>()
+@Output() remove = new EventEmitter<User>()
   constructor() { }
 
   ngOnInit(): void {

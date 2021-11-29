@@ -11,6 +11,11 @@ export class UserListComponent implements OnInit {
 @Output() showdetail = new EventEmitter<User>()
   constructor() { }
 
+  remove(user:User){
+    this.users = this.users.filter(item => item.id != user.id)
+
+  }
+
   ngOnInit(): void {
   }
 

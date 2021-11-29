@@ -1,4 +1,5 @@
 <div class="my-4 single-container">
   <img width="100px" height="100px" [src]="user.profilePhotoUrl">{{user.name}} {{user.surname}} {{user.age}} {{user.address.city}}
   <button (click)="showdetail.emit(user)" class="btn btn-primary">show details</button>
+  <button (click)="remove.emit(user)" class="btn btn-danger">remove user</button>
 </div>
