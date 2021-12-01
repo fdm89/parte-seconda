@@ -1,0 +1,18 @@
+.container-detail {
+  border: solid 2px red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: 400px;
+  line-height: 7px;
+  margin-top: 14px;
+}
+
+.btn {
+ position: fixed;
+ margin-right: 0;
+ margin-left: 30%;
+ margin-top: 20%;
+}
